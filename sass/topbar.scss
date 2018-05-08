@@ -1,0 +1,73 @@
+/* Top Bar
+================================================== */
+
+.site-top {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:999;
+}
+
+/* Top social */
+
+.top-social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	a {
+		font-size: 14px;
+		margin-left: 20px;
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.topbar-transparent {
+	color: #fff;
+	background: none;
+	box-shadow: none;
+	padding: 12px 0;
+	line-height: normal;
+	transition: 350ms;
+	ul li a{
+		color: #fff;
+		font-weight: 600;
+	}
+	&.border-down {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      line-height: normal;
+   }
+}
+
+/* Topbar info */
+
+#top-bar .top-info {
+	margin: 0;
+	float: left;
+	p{
+		color: #fff;
+		font-weight: 400;
+		font-size: 15px;
+	}
+	i{
+		color: #fff;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	.info-icon {
+		top: 0;
+		margin-right: 5px;
+	}
+	.info-wrapper:after {
+		height: 15px;
+		top: 2px;
+		background: rgba(255, 255, 255, 0.2);
+	}
+	li.last .info-wrapper:after {
+		background: none;
+	}
+}
+
