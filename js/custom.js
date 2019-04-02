@@ -1,18 +1,18 @@
 /*
-   Template Name: BiziPress - Finance, Consulting, Business HTML Template
-   Author: Tripples
-   Author URI: https://themeforest.net/user/tripples
-   Description: BiziPress - Finance, Consulting, Business HTML Template
-   Version: 1.0
+	Template Name: BiziPress - Finance, Consulting, Business HTML Template
+	Author: Tripples
+	Author URI: https://themeforest.net/user/tripples
+	Description: BiziPress - Finance, Consulting, Business HTML Template
+	Version: 1.0
 
-   1. Fixed header
-   2. Main slideshow
-   3. Site search
-   4. Owl Carousel
-   5. Video popup
-   6. Counter
-   7. Contact form
-   8. Back to top
+	1. Fixed header
+	2. Main slideshow
+	3. Site search
+	4. Owl Carousel
+	5. Video popup
+	6. Counter
+	7. Contact form
+	8. Back to top
   
 */
 
@@ -253,6 +253,8 @@ jQuery(function ($) {
    });
 
 
+
+
    /* ----------------------------------------------------------- */
    /*  Site search
     /* ----------------------------------------------------------- */
@@ -371,7 +373,7 @@ jQuery(function ($) {
    //Page slide
    $(".featured-cases-slide").owlCarousel({
 
-      loop: true,
+      loop: false,
       autoplay: false,
       autoplayHoverPause: true,
       nav: true,
@@ -494,24 +496,24 @@ jQuery(function ($) {
    /*  Back to top
    /* ----------------------------------------------------------- */
 
+
    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-             $('#back-to-top').fadeIn();
+      if ($(this).scrollTop() > 500) {
+         $('#back-to-top').fadeIn();
       } else {
-             $('#back-to-top').fadeOut();
-            }
-      });
-
-      // scroll body to 0px on click
-      $('#back-to-top').on('click', function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                  scrollTop: 0
-            }, 800);
-            return false;
-      });
-
+         $('#back-to-top').fadeOut();
+      }
+   });
+   // scroll body to 0px on click
+   $('#back-to-top').click(function () {
       $('#back-to-top').tooltip('hide');
+      $('body,html').animate({
+         scrollTop: 0
+      }, 800);
+      return false;
+   });
+
+   $('#back-to-top').tooltip('hide');
 
    /* ----------------------------------------------------------- */
    /*  Packery
